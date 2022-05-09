@@ -1,0 +1,196 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  list-style: none;
+  text-decoration: none;
+}
+/* Variables */
+:root {
+  --main-color: #d7dde4;
+  --second-color: #192f6a;
+  --text-color: #314862;
+  --bg-color: rgb(3, 2, 2);
+
+  /* Box Shadow */
+  --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+/* used for footer button */
+.btn {
+  padding: 8px 22px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 5rem;
+}
+.btn:hover {
+  background: #3492fd;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+p{
+  font-size: large;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg img{
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+
+  
+}
+.firstimg{
+   background-image: url(img/first.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.secondimg{
+  background-image: url(img/second.jpg);
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.aboutimg{
+  background-image: url(img/about.avif);
+  background-size: cover;
+  height: 250px;
+  background-repeat: no-repeat;
+
+
+}
+.imgpop1{
+  background-image: url(img/pop1.avif);
+  background-size: cover;
+  height: 100px;
+  background-repeat: no-repeat;
+
+  
+}
+.imgpop2{
+  background-image: url(img/pop2.avif);
+  background-size: cover;
+  height: 100px;
+  background-repeat: no-repeat;
+
+}
+.imgpop3{
+  background-image: url(img/pop3.avif);
+  background-size: cover;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Footer sections start from here */
+
+.footer {
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius:8px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2rem;
+}
+.footer-container h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-box a {
+  font-size: 0.8rem;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.footer-box a:hover {
+  color: var(--text-color);
+}
+.social a {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+.social a:hover {
+  color: var(--second-color);
+}
+.copyright {
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background: var(--main-color);
+}
